@@ -5,13 +5,13 @@ const router = express.Router();
 
 router.get('/', postController.getPosts);
 
-router.get('/category/:category', postController.getPostsByCategory);
+/* router.get('/category/:category', postController.getPostsByCategory); */
 
 router.get('/:id', postController.getPostById);
 
 router.post('/', postController.createPost);
 
-router.post('/:id/comments', postController.createComment);
+/* router.post('/:id/comments', postController.createComment); */
 
 router.post('/:id', postController.updatePost);
 
